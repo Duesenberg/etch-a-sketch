@@ -29,6 +29,11 @@ function createGrid () {
     containter.style.display = 'grid';
     containter.style.gridTemplateRows = 'repeat('+gSize+', 1fr)';
     containter.style.gridTemplateColumns = 'repeat('+gSize+', 1fr)';
+    let sqr = document.querySelectorAll('.square');
+    sqr.forEach((div) => {
+        div.style.backgroundColor = 'white';
+    })
+
 }
 
 //function for clearing grid, turning all squares white
