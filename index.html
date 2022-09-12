@@ -7,8 +7,33 @@
     <script src="./script.js" defer></script>
   </head>
   <body>
-    <div class="cont">
-      <div class="container"></div>
+    <div class="main-container">
+      <div class="cont">
+        <div class="grid-container"></div>
+      </div>
+      <div class="settings">
+        <div class="settings-title">Etch-A-Sketch</div>
+        <div class="settings-title2">Canvas Size</div>
+        <div class="grid-size">
+          <input type="number" id="size-input" min="1" max="64" value="16">
+          <button onclick="createGrid(); draw ();">Resize</button>
+        </div>
+        <div class="tools">
+          <div class="settings-title2">Tools</div>
+          <div class="tools-icons">
+            <button class="pencil" onclick="drawPencil ();"><img src="./images/pencil.jpg"></button>
+            <button class="eraser" onclick="eraser ();"><img src="./images/eraser.jpg"></button>
+            <button class="rainbow" onclick="rainbow ();"><img src="./images/rainbow.jpg"></button>
+            <button class="clear-button" onclick="clearGrid();">Clear</button>
+          </div>
+        </div>
+        <div class="pencil-settings">
+          <div class="settings-title2">Pencil Color</div>
+            <div class="color-card">
+              <input type="color" id="color-picker" value="#000000" style="width: inherit; height: 50px; padding: 0px; margin: 0px; border: 0px; background-color: rgb(100, 130, 150);">
+            </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
